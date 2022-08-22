@@ -48,9 +48,7 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
-    width: 45px;
-    height: 16px;
-    left: 453px;
+    letter-spacing: 0.02em;
     
     
 }
@@ -64,6 +62,7 @@ body{
     font-size: 14px;
     line-height: calc(16 / 14);
     color: var(--second-cl);
+    letter-spacing: 0.02em;
 }
 
 .contacts:hover,
@@ -85,6 +84,7 @@ body{
 .main-section-title {
     color: var(--main-section-cl);
 }
+
 .main-section-btn {
     color: var(--main-section-cl);
     font-weight: 700;
