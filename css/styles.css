@@ -2,7 +2,7 @@
 :root{
     /* fonts */
     --main-font: Roboto, sans-serif;
-    --secondary-font: Ralewey, sans-serif;
+    --secondary-font: Raleway, sans-serif;
 
 
     /* text colors*/
@@ -24,6 +24,24 @@ body{
     font-family: var(--main-font);
 }
 
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
 .link {
     text-decoration: none;
     color: currentColor;
@@ -31,7 +49,37 @@ body{
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    outline: 2px solid red;
+}
+
+.page-header {
+    
+}
+
+.header-container {
+    display: flex;
+    margin-right: auto;
+    
+   
+}
+
+.main-nav {
+    display: flex;
+}
+
+
 
 .logo {
     font-family: var(--secondary-font);
@@ -39,23 +87,36 @@ body{
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
+    margin-right: 93px;
     
 }
 .logo-style {
     color: #2196F3;
+}
+
+.site-nav-list{
+    display: flex;
 }
 .site-nav  {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    
-    
+}
+.site-nav :not(:last-child) {
+    margin-right: 50px;
+
 }
 .site-nav:hover,
 .site-nav:focus {
     color: var(--blue-cl);
 }
+
+.contacts-list {
+    display: flex;
+    
+}
+
 
 .contacts {
     font-weight: 500;
@@ -63,6 +124,7 @@ body{
     line-height: calc(16 / 14);
     color: var(--second-cl);
     letter-spacing: 0.02em;
+    margin-right: auto;
 }
 
 .contacts:hover,
@@ -107,7 +169,7 @@ body{
 
 .advantages-item-text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 /14);
     letter-spacing: 0.03em;    
     color: var(--second-cl);
 }
@@ -161,7 +223,7 @@ body{
 
 
 /* ПОРТФОЛІО*/
-.portfolio-btn {
+.btn {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
